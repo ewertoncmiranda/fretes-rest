@@ -1,0 +1,13 @@
+micronaut:
+  application:
+    name: fretesRest
+
+grpc:
+  client:
+    plaintext: true
+    max-retry-attempts: 10
+  channels:
+    fretes:
+      plaintext: true
+      max-retry-attempts: 10
+      address: 'localhost:50051'
